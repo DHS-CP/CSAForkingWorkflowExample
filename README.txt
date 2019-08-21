@@ -28,3 +28,10 @@ git branch <name of branch>
 git add .
 git commit -m ¿your message here¿
 git push
+
+To update your forked repo/local repo after changes are made in the master:
+git remote add upstream <link to original repo>
+git fetch upstream
+git checkout master
+git rebase origin master
+git push origin master
